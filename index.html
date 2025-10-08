@@ -6,14 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Guessing game</title>
+    <title>Guessing Game</title>
 </head>
 
 <body>
     <h1 class="Heading">
         <img class="logo" src="assets/images/Qmark-pic.png" alt="Question mark logo "> Guessing Game
     </h1>
-    <div class="game-area"></div>
+    <div class="game-area">
+        <div class="controls">
+            <button class="btn btn--big btn green">
+                <i class="fa-1"></i>
+            </button>
+            <button class="btn btn--big btn yellow">
+                <i class="fa-2"></i>
+            </button>
+            <button class="btn btn--big btn orange">
+                <i class="fa-3"></i>
+            </button>
+            <button class="btn btn--big btn red">
+                <i class="fa-4"></i>
+            </button>
+            <div class="Question-area">
+                <span id="low-guess">0</span>
+                <span id="and">And</span>
+                <span id="high-guess">0</span>
+                <p class="answer">Enter Answer:</p>
+                <input id="answer-box" type="number">
+            </div>
+            <button class="btn btn--grey">Submit Answer</button>
+        </div>
+    </div>
     <div class="score-area">
         <P class="scores">Correct guesses:<span id="score">0</span></P>
         <p class="scores">Incorrect guesses:<span id="Incorrect score">0</span></p>
