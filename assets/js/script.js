@@ -62,21 +62,43 @@ levelButtons.forEach((btn) => {
 
 // Submitting guess
 submitButton.addEventListener('click', () => {
-  const guess = parseInt(answerBox.value);
+    const guess = parseInt(answerBox.value);
 
-  if (isNaN(guess) || guess < 1 || guess > maxNumber) {
-    alert(`Please enter a number between 1 and ${maxNumber}.`);
-    return;
-  }
+    if (isNaN(guess) || guess < 1 || guess > maxNumber) {
+        alert(`Please enter a number between 1 and ${maxNumber}.`);
+        return;
+    }
 
-  if (guess === targetNumber) {
-    correctScore++;
-    correctScoreEl.textContent = correctScore;
-    alert('🎉 Correct! You guessed the number!');
-    resetGame();
-  } else {
-    incorrectScore++;
-    incorrectScoreEl.textContent = incorrectScore;
-    giveHint(guess);
-  }
+    if (guess === targetNumber) {
+        correctScore++;
+        correctScoreEl.textContent = correctScore;
+        alert('🎉 Correct! You guessed the number!');
+        resetGame();
+    } else {
+        incorrectScore++;
+        incorrectScoreEl.textContent = incorrectScore;
+        giveHint(guess);
+    }
 });
+
+// Hint function
+function giveHint(guess) {
+    const diff = Math.abs(targetNumber - guess);
+
+    let message = '';
+    if (diff <= 2) {
+        message = '🔥 Super close!';
+    } else if (diff <= 5) {
+        message = '🌡️ Warm!';
+    } else if (diff <= 10) {
+        message = '🧊 Cold!';
+    } else {
+        message = '🥶 Very cold!';
+    }
+
+    if (guess < targetNumber) {
+        alert(`${message} Try a higher number!`);
+    } else {
+        alert(`${message} Try a lower number!`);
+    }
+}
