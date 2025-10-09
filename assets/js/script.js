@@ -16,7 +16,7 @@ let incorrectScore = 0;
 answerBox.disabled = true;
 submitButton.disabled = true;
 
-// Handle level selection
+// Level selection
 levelButtons.forEach((btn) => {
     const level = btn.getAttribute('data-type');
 
@@ -58,4 +58,25 @@ levelButtons.forEach((btn) => {
 
         console.log('(Debug) Target:', targetNumber); // for testing
     });
+});
+
+// Submitting guess
+submitButton.addEventListener('click', () => {
+  const guess = parseInt(answerBox.value);
+
+  if (isNaN(guess) || guess < 1 || guess > maxNumber) {
+    alert(`Please enter a number between 1 and ${maxNumber}.`);
+    return;
+  }
+
+  if (guess === targetNumber) {
+    correctScore++;
+    correctScoreEl.textContent = correctScore;
+    alert('🎉 Correct! You guessed the number!');
+    resetGame();
+  } else {
+    incorrectScore++;
+    incorrectScoreEl.textContent = incorrectScore;
+    giveHint(guess);
+  }
 });
