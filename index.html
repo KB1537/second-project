@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
     <title>Guessing Game</title>
 </head>
@@ -15,31 +16,31 @@
     </h1>
     <div class="game-area">
         <div class="controls">
-            <button class="btn btn--big btn green">
-                <i class="fa-1"></i>
+            <button data-type="Easy" class="btn btn--big btn--green">
+                <i class="fa-solid fa-1"></i>
             </button>
-            <button class="btn btn--big btn yellow">
-                <i class="fa-2"></i>
+            <button data-type="Medium" class="btn btn--big btn--yellow">
+                <i class="fa-solid fa-2"></i>
             </button>
-            <button class="btn btn--big btn orange">
-                <i class="fa-3"></i>
+            <button data-type="Hard" class="btn btn--big btn--orange">
+                <i class="fa-solid fa-3"></i>
             </button>
-            <button class="btn btn--big btn red">
-                <i class="fa-4"></i>
+            <button data-type="Custom" class="btn btn--big btn--red">
+                <i class=" fa-solid fa-4"></i>
             </button>
             <div class="Question-area">
-                <span id="low-guess">0</span>
+                <span id="low-guess">Guess a number between 0</span>
                 <span id="and">And</span>
                 <span id="high-guess">0</span>
                 <p class="answer">Enter Answer:</p>
                 <input id="answer-box" type="number">
             </div>
-            <button class="btn btn--grey">Submit Answer</button>
+            <button data-type="Submit" class="btn btn--grey">Submit Answer</button>
         </div>
     </div>
     <div class="score-area">
         <P class="scores">Correct guesses:<span id="score">0</span></P>
-        <p class="scores">Incorrect guesses:<span id="Incorrect score">0</span></p>
+        <p class="scores">Incorrect guesses:<span id="Incorrect-score">0</span></p>
     </div>
 
     <div></div>
