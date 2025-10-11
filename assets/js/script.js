@@ -74,6 +74,8 @@ submitButton.addEventListener('click', () => {
         correctScoreEl.textContent = correctScore;
         alert('🎉 Correct! You guessed the number!');
         resetGame();
+
+
     } else {
         incorrectScore++;
         incorrectScoreEl.textContent = incorrectScore;
@@ -101,4 +103,14 @@ function giveHint(guess) {
     } else {
         alert(`${message} Try a lower number!`);
     }
+}
+function resetGame() {
+    // Generate new number for the same difficulty
+    targetNumber = Math.floor(Math.random() * maxNumber) + 1;
+
+    // Reset input
+    answerBox.value = '';
+    answerBox.focus();
+
+    console.log('(Debug) New target:', targetNumber);
 }

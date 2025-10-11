@@ -171,18 +171,7 @@ body {
     color: white;
 }
 
-/*.btn--gray {
-    padding-top: 30px;
-    margin-top: 25px;
-    background-color: #25425e;
-    border: 1px transparent;
-    border-radius: 20px;
-}*/
 
-/*.btn--gray:active,
-.btn--gray:hover {
-    background-color: #0d1013;
-}*/
 
 button[data-type="Submit"] {
   background-color: darkgray;     
