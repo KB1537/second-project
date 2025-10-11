@@ -51,18 +51,20 @@ Hints guide players toward the correct answer while tracking correct and incorre
 - Adapts to all screen sizes (desktop, tablet, and mobile)
 
 ## Project Structure
-Guessing-Game/
-│
-├── index.html # Main game interface
-├── assets/
-│ ├── css/
-│ │ └── styles.css # Styling for the game
-│ ├── js/
-│ │ └── script.js # Game logic and interactivity
-│ └── images/
-│ └── Qmark-pic.png # Logo image
-│ └──guessing-game-pic # screenshot of guessing game 
-└── README.md # Project documentation
+
+Guessing game
+  - index.html 
+  - assets
+    - CSS
+      - styles.css
+    - js
+      - scripts.js
+    - images
+      - Qmark-pic.png
+      - guessing-game-pic.png
+      
+  - README.md
+
 
 # How to Play
 
