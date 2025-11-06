@@ -15,12 +15,15 @@ Hints guide players toward the correct answer while tracking correct and incorre
 5. [Preview](#preview)  
 6. [Validation Testing](#validation-testing)  
 7. [Deployment](#deployment)  
-8. [Credits](#credits)  
+8. [Accessibility](#accessibility)
+9. [Credits](#credits)  
 
 
 # Features
 
 🎚️ Multiple difficulty levels:
+
+This feature allows players of all skill levels to find a suitable challenge, ensuring the game is always engaging and accessible.
 
 - Easy: Guess a number between 1–5
 
@@ -30,27 +33,38 @@ Hints guide players toward the correct answer while tracking correct and incorre
 
 - Custom: Set your own maximum number
 
- 💡 Interactive hints:
+# Interactive hints
+
+ The interactive hints provide real-time, actionable feedback based on the difference between the guess and the target number. This helps users develop a logical approach to quickly narrow the range of guesses.
 
 - 🔥 Super close! (±2)
+![Super close guess screenshot](<assets/images/super hot guess snip.png>)
 
 - 🌡️ Warm! (±5)
-
+![warm guess screenshot](<assets/images/warm guess.png>)
 - 🧊 Cold! (±10)
+![cold guess screenshot](<assets/images/cold guess snip.png>)
 
 - 🥶 Very cold! (more than ±10)
+![alt text](<assets/images/very cold guess.png>)
+# Score tracking:
 
-🧮 Score tracking:
+The game keeps a running score of your attempts, which motivates players by showing their immediate progress and number of attempts. This encourages them to beat their personal best or try to win in fewer guesses next time.
+
 
  ✅ Correct guesses
 
+![correct guess screenshot](<assets/images/correct guess snip.png>)
+
  ❌ Incorrect guesses
+ 
+![guess tracker screenshot](<assets/images/guess tracker snip.png>)
 
-🖥️ Responsive design:
+# Responsive design
 
-- Adapts to all screen sizes (desktop, tablet, and mobile)
+The application adapts seamlessly to all screen sizes (desktop, tablet, and mobile). This ensures the game is accessible and fully playable on any device, so you can enjoy it anywhere without loss of functionality.
 
-## Project Structure
+# Project Structure
 
 Guessing game
   - index.html 
@@ -61,7 +75,8 @@ Guessing game
       - scripts.js
     - images
       - Qmark-pic.png
-      - guessing-game-pic.png
+      - guessing-game-pic.png 
+      - project 2 css snip.png
       
   - README.md
 
@@ -70,7 +85,7 @@ Guessing game
 
 Open index.html in your web browser.
 
-Choose a difficulty level — Easy, Medium, Hard, or Custom.
+Choose a difficulty level — Easy, Medium, Hard, or Custom.(G)
 
 Enter your guess in the input box.
 
@@ -99,15 +114,20 @@ Font Awesome — For button icons
 
 # Validation Testing
 
-## HTML
+### HTML
 - No errors when passed through wc3 validator
-## CSS
+
+![HTML w3c checker screenshot](<assets/images/project 2 HTML snip.png>)
+### CSS
  - No errors when passed through wc3 validator
-## Javascript
+
+ ![CSS w3c checker screenshot](<assets/images/project 2 css snip.png>)
+### Javascript
 - No errors when passed through Js hint.
 
+![jshint checker screenshot](<assets/images/project 2 js snip.png>)
 
-## Deployment 
+# Deployment 
   The site was deployed to github pages, steps to deploy are outlined below:
 
 1 Go to your GitHub repo → Settings → Pages.
@@ -115,6 +135,12 @@ Font Awesome — For button icons
 2 Under Build and deployment, choose:
  * Source: Deploy from a branch, 
  * Branch: main (or master) → /root
+
+
+# Accessibility 
+Lighthouse report attached below:
+
+![Lighthouse report screenshot](<assets/images/lighthouse snip.png>)
 
 # Credits 
 Content
