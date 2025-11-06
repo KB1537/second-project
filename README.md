@@ -5,6 +5,17 @@ A simple and fun number guessing game built with HTML, CSS, and JavaScript.
 Players can choose a difficulty level — Easy, Medium, Hard, or Custom — and try to guess a randomly generated number.
 Hints guide players toward the correct answer while tracking correct and incorrect guesses.
 
+
+# Value
+The **Guessing Game** is designed to provide users with a quick and engaging way to test their logic, intuition, and attention to patterns.  
+It’s a lightweight web app that demonstrates how core JavaScript concepts like random number generation, conditionals, and event handling can be used to build an interactive and responsive game.  
+
+**Value to users:**
+- 🎮 Simple, intuitive gameplay for all ages.  
+- 🧠 Encourages logical thinking and strategic guessing.  
+- 💻 Works seamlessly across desktop and mobile devices.  
+
+
 # Table of Contents
 
 
@@ -37,28 +48,26 @@ This feature allows players of all skill levels to find a suitable challenge, en
 
  The interactive hints provide real-time, actionable feedback based on the difference between the guess and the target number. This helps users develop a logical approach to quickly narrow the range of guesses.
 
-- 🔥 Super close! (±2)
-![Super close guess screenshot](<assets/images/super hot guess snip.png>)
+| Hint | Description | Example |
+|------|--------------|----------|
+| 🔥 **Super Close!** (±2) | You’re almost there — just a bit off! | <img src="assets/images/super hot guess snip.png" alt="Super close guess" width="600"/> |
+| 🌡️ **Warm!** (±5) | Getting closer — keep guessing! | <img src="assets/images/warm guess.png" alt="Warm guess" width="600"/> |
+| 🧊 **Cold!** (±10) | Quite far — adjust your range. | <img src="assets/images/cold guess snip.png" alt="Cold guess" width="600"/> |
+| 🥶 **Very Cold!** (> ±10) | Way off — try a different approach. | <img src="assets/images/very cold guess.png" alt="Very cold guess" width="600"/> |
 
-- 🌡️ Warm! (±5)
-![warm guess screenshot](<assets/images/warm guess.png>)
-- 🧊 Cold! (±10)
-![cold guess screenshot](<assets/images/cold guess snip.png>)
-
-- 🥶 Very cold! (more than ±10)
-![alt text](<assets/images/very cold guess.png>)
 # Score tracking:
 
 The game keeps a running score of your attempts, which motivates players by showing their immediate progress and number of attempts. This encourages them to beat their personal best or try to win in fewer guesses next time.
 
 
- ✅ Correct guesses
 
-![correct guess screenshot](<assets/images/correct guess snip.png>)
 
- ❌ Incorrect guesses
- 
-![guess tracker screenshot](<assets/images/guess tracker snip.png>)
+| Hint | Description | Example |
+|------|--------------|----------|
+| 
+| 🧊 **Correct Guess**  | Correct! you guessed the number    | <img src="assets/images/correct guess snip.png" alt="Correct guess snip" width="600"/> |
+| 🥶 **Incorrect Guess**  | Displays Incorrect guess counter at bottom of screen | <img src="assets/images/guess tracker snip.png" alt="Incorrect guess tracker" width="600"/> |
+
 
 # Responsive design
 
@@ -77,9 +86,17 @@ Guessing game
       - Qmark-pic.png
       - guessing-game-pic.png 
       - project 2 css snip.png
-      
-  - README.md
+      - cold guess snip.png
+      - correct guess snip.png
+      - custom input snip.png
+      - guess tracker snip.png
+      - lighthouse snip.png
+      - project 2 HTML snip.png
+      - project 2 js snip.png
+      - super hot guess snip.png
+      - very cold guess.png
 
+  - README.md
 
 # How to Play
 
@@ -114,21 +131,19 @@ Font Awesome — For button icons
 
 # Validation Testing
 
-### HTML
-- No errors when passed through wc3 validator
 
-![HTML w3c checker screenshot](<assets/images/project 2 HTML snip.png>)
-### CSS
- - No errors when passed through wc3 validator
+| Hint | Description | Example |
+|------|--------------|----------|
+|  **HTML**  | - No errors when passed through wc3 validator| <img src="assets/images/project 2 HTML snip.png" alt="Super close guess" width="600"/> |
+|  **CSS**  | - No errors when passed through wc3 validator | <img src="assets/images/project 2 css snip.png" alt="Warm guess" width="600"/> |
+|  **Javascript** | - No errors when passed through Js hint. | <img src="assets/images/project 2 js snip.png" alt="Cold guess" width="600"/> |
 
- ![CSS w3c checker screenshot](<assets/images/project 2 css snip.png>)
-### Javascript
-- No errors when passed through Js hint.
-
-![jshint checker screenshot](<assets/images/project 2 js snip.png>)
 
 # Deployment 
-  The site was deployed to github pages, steps to deploy are outlined below:
+
+Play the game online here: https://kb1537.github.io/second-project/
+
+The site was deployed to github pages, steps to deploy are outlined below:
 
 1 Go to your GitHub repo → Settings → Pages.
 
